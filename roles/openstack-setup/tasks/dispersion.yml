@@ -10,4 +10,3 @@
   when: not client.self_signed_cert|default('True')|bool
   run_once: True
   delegate_to: "{{ groups['swiftnode_primary'][0] }}"
-

@@ -135,4 +135,3 @@
   tags:
     - serverspec
   when: serverspec.enabled|default('False')|bool
- 

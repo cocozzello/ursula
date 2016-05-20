@@ -10,4 +10,3 @@ mongodb:
     verbose: True
   cafile: "{{ ssl.cafile|default('/etc/ssl/certs/ca-certificates.crt') }}"
   endpoint_addr: "{{ hostvars[groups['mongo_db'][0]][primary_interface]['ipv4']['address'] }}"
-  

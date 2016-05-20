@@ -6,7 +6,7 @@
 - name: install haproxy
   apt:
     pkg: haproxy
-  notify: restart rsyslog 
+  notify: restart rsyslog
   register: result
   until: result|succeeded
   retries: 5

@@ -5,4 +5,3 @@ swift_proxy:
   workers: "{{ swift.cluster.no_workers }}"
   operator_roles: Member,_member_,admin,cloud_admin,project_admin
   reseller_admin_role: cloud_admin
-

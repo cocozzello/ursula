@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Exit on first non-zero exit code
+set -e
+# Print commands we run
+set -v
+
+# Exclude the envs and templates directories from yaml linter
+YAMLLINT_FILES=$(
+  find ../. -ipath '*templates' -prune -or \
+         -path '.././envs' -prune -or \
+         -path '.././.venv' -prune -or \
+         -path '.././.tox' -prune -or \
+         -name '*.yml' -print -or \
+         -name '*.yaml' -print \
+)
+
+yamllint -c yamllintconf $YAMLLINT_FILES

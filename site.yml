@@ -18,7 +18,7 @@
   any_errors_fatal: true
   roles:
     - role: common
-      tags: ['common','common-base']
+      tags: ['common', 'common-base']
     - role: manage-disks
       tags: ['common', 'manage-disks']
       when: manage_disks.enabled|default('False')|bool
@@ -28,7 +28,7 @@
     - role: logging
       tags: ['common', 'logging']
     - role: collectd-client
-      tags: ['collectd-client','collectd']
+      tags: ['collectd-client', 'collectd']
       when: collectd.enabled|default('False')|bool
   environment: "{{ env_vars|default({}) }}"
 

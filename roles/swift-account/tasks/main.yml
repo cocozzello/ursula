@@ -1,6 +1,6 @@
 ---
 - name: swift-account service scripts
-  upstart_service: name=swift-{{ item.name }} 
+  upstart_service: name=swift-{{ item.name }}
                    cmd=/usr/local/bin/swift-{{ item.cmd|default(item.name) }}
                    args=/etc/swift/account-server.conf
                    user=swift

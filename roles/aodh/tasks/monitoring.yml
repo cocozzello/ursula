@@ -14,7 +14,7 @@
 - name: aodh-listener process check
   sensu_process_check: service=aodh-listener
   notify: restart sensu-client
-  
+
 - name: aodh-notifier process check
   sensu_process_check: service=aodh-notifier
   notify: restart sensu-client

@@ -9,3 +9,4 @@ python-cinderclient
 python-neutronclient
 python-keystoneclient
 -e git://github.com/blueboxgroup/ursula-cli.git@master#egg=ursula-cli
+yamllint

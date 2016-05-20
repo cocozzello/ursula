@@ -2,4 +2,3 @@
 haproxy:
   bufsize: 16384
   stats_group: monitor
- 

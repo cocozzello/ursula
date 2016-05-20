@@ -18,7 +18,7 @@
 - stat: path=/etc/swift/account.ring.gz
   register: account_ring
 
-- set_fact: start_proxy={{ container_ring.stat.exists }} and 
+- set_fact: start_proxy={{ container_ring.stat.exists }} and
                         {{ object_ring.stat.exists }} and
                         {{ account_ring.stat.exists }}
 

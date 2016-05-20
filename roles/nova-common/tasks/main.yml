@@ -63,6 +63,6 @@
   when: logging.enabled|default('True')|bool
 
 - include: serverspec.yml
-  tags: 
+  tags:
     - serverspec
   when: serverspec.enabled|default('False')|bool

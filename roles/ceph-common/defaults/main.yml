@@ -6,7 +6,7 @@ ceph:
   #  - sdb
   #  - sdc
   #  - sdd
-  #bcache_ssd_device: sdg 
+  #bcache_ssd_device: sdg
 
   stable_release: hammer
 

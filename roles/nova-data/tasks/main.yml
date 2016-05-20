@@ -81,6 +81,6 @@
   when: monitoring.enabled|default('True')|bool
 
 - include: serverspec.yml
-  tags: 
+  tags:
     - serverspec
   when: serverspec.enabled|default('False')|bool

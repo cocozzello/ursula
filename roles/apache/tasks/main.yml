@@ -20,7 +20,7 @@
     - rewrite
     - uwsgi
   notify: reload apache
-  
+
 - name: disable apache status
   command: a2dismod status
   notify:
@@ -40,4 +40,3 @@
 
 - name: remove ports.conf
   file: dest=/etc/apache2/ports.conf state=absent
-
